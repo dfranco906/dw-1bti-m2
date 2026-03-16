@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularios</title>
+
+	<style>
+		body {
+			display: grid;
+			width: 100%;
+			justify-content: center;
+
+		}
+
+		form {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			gap: 5px;
+			background-color: #B6D1E0;
+			padding: 10px;
+			border: solid 1px black;
+			font-size: 20px;
+		}
+
+		input {
+			height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>FORMULARIOS EN HTML</h1>
+	<form action="#" method="get">
+
+		<label for="idNombre">NOMBRE:</label>
+		<input type="text" id="idNombre" placeholder="Escriba su nombre...">
+
+		<label for="idApellido">APELLIDO:</label>
+		<input type="text" id="idApellido" placeholder="Escriba su apellido...">
+
+		<label for="idEmail">EMAIL:</label>
+		<input type="email" id="idEmail" placeholder="ejemplo@dominio.com">
+
+		<label for="idPassword">PASSWORD:</label>
+		<input type="password" id="idPassword" placeholder="********">
+
+		<label for="idIdentificacion">NÚMERO DE IDENTIFICACIÓN:</label>
+		<input type="number" id="idIdentificacion" placeholder="Ingrese el N° de su DNI">
+
+		<label for="idTelefono">NÚMERO DE TELÉFONO:</label>
+		<input type="number" id="idTelefono" placeholder="Ingrese su N° de teléfono">
+
+		<label for="idFechaNacimiento">FECHA DE NACIMIENTO:</label>
+		<input type="datetime-local" id="idFechaNacimiento">
+
+		<label for="">SEXO:</label>
+		<section>
+			<input type="radio"> <span>Masculino</span>
+			<input type="radio"><span>Femenino</span>
+		</section>
+
+		<label for="idEstadoCivil">ESTADO CIVIL:</label>
+		<select name="selectEstadoCivil" id="idEstadoCivil">
+			<option value="0">-Seleccione-</option>
+			<option value="1">Casado</option>
+			<option value="2">Soltero</option>
+			<option value="3">Union libre</option>
+			<option value="4">Separado</option>
+			<option value="5">Viudo</option>
+			<option value="6">Dante</option>
+		</select>
+
+		<label for="idFormacion">FORMACION:</label>
+		<select name="selectFormacion" id="idFormacion" multiple>
+			<option value="1">Secundaria</option>
+			<option value="2">Media</option>
+			<option value="3">Tecnicatura</option>
+			<option value="4">Licenciatura</option>
+		</select>
+
+		<label for="">FORMACION:</label>
+		<section>
+			<input type="checkbox" value="Tecnico"> <span>Tecnico</span>
+			<input type="checkbox" value="Tecnologo"> <span>Tecnologo</span>
+			<input type="checkbox" value="Especialista"> <span>Especialista</span>
+		</section>
+
+		<label for="">SELECCIONAR FOTO:</label>
+		<input type="file">
+
+		<label for="idComentarios">COMENTARIOS:</label>
+		<textarea id="idComentarios" placeholder="Escriba sus sugerencias..." rows="10" cols="1"></textarea>
+
+	</form>
+	<br>
+	<form action="#" method="post">
+		<label for="">USUARIO:</label>
+		<input type="text" placeholder="Ingrese su usuario...">
+		<label for="">PASSWORD:</label>
+		<input type="password" placeholder="Ingrese su contrase?a">
+		<input type="submit" value="ENVIAR">
+		<input type="reset" value="CANCELAR">
+	</form>
+	<br>
+	<form action="#" method="post">
+		<label for="">USUARIO:</label>
+		<input type="text" placeholder="Ingrese su usuario...">
+		<label for="">PASSWORD:</label>
+		<input type="password" placeholder="Ingrese su contrase?a">
+		<input type="button" value="CLICK" onclick="alert('Hola, soy un boton!')">
+		<input type="reset" value="CANCELAR">
+	</form>
+
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
